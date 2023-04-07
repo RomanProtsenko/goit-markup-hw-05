@@ -173,7 +173,6 @@ img {
   letter-spacing: 0.04em;
   color: var(--brand-color);
   flex: none;
-  order: 0;
   flex-grow: 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -196,7 +195,7 @@ img {
   letter-spacing: 0.04em;
   color: #4d5ae5;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .two-section-one-item-button:hover {
@@ -356,6 +355,7 @@ img {
 /* Boxing page 1 */
 
 .section-one {
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
   background-image: linear-gradient(
@@ -366,7 +366,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
+  margin: 0 auto;
+  }
 
 .title-one-page {
   max-width: 496px;
@@ -481,11 +482,10 @@ img {
 .el-five,
 .el-seven,
 .el-eight {
-  margin-right: 23px;
+  margin-right: 24px;
 }
 .el-page-two:hover {
-  border: 1px solid #f4f4fd;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -592,7 +592,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #8e8f99;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot {
@@ -639,9 +640,6 @@ img {
   margin-left: 120px;
 }
 
-.link-icon-three {
-  fill: #8e8f99;
-}
 
 .link-icon-three:hover,
 .link-icon-three:focus {
@@ -694,7 +692,7 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: ;
+  background-color: rgba(46, 47, 66, 0.4);;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -709,24 +707,23 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: 250ms linear;
   padding: 20px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
  }
 
 .button-modal {
   width: 24px;
   height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);1px solid rgba(0, 0, 0, 0.1);;
-  background-color: #E7E9FC;;
+  background-color: #E7E9FC;
   border-radius: 50%;
-  display: block;
+    display: block;
   margin-left: auto;
   }
 
 .button-modal-svg {
-  width: 24px;
-  height: 24px;
-   border: 1px solid rgba(0, 0, 0, 0.1);1px solid rgba(0, 0, 0, 0.1);;
-  background-color: #E7E9FC;;
-  border-radius: 50%;
+  width: 8px;
+  height: 8px;
   display: block;
   margin-left: auto;
   }
